@@ -1,0 +1,10 @@
+{
+	"name" : "Translation",
+	"description" : "This allows the multi language support for the site",
+	"author" : "Agriya",
+	"authorEmail" : "info@agriya.com",
+	"authorUrl" : "http://www.agriya.com",
+	"settings" : "true",
+	"parent": "2.Plugins For All Resources.Children.Core.Children",
+	"icon": "translation"
+}

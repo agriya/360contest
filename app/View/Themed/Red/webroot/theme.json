@@ -1,0 +1,12 @@
+{
+	"name" : "360Contest red",
+	"description" : "360Contest red",
+	"screenshot" : "home-red.png",
+
+	"author" : "Agriya",
+	"authorEmail" : "info@agriya.com",
+	"authorUrl" : "http://www.agriya.com",
+	"menus" : [
+		"footer1"
+	]
+}

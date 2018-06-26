@@ -1,0 +1,291 @@
+/*Media query styles*/
+@media (min-width: 768px) and (max-width: 979px) {
+	body {
+		.content {
+		span.text-32{
+			font-size:24px;
+			}
+			div.activity-content {
+		margin-left:145px;
+		}
+
+
+
+			.mob-c{
+				width:auto;
+				float:none;
+				display:block;
+
+				div{
+				margin-left:0px;
+
+				}
+
+				ul, li, form{
+				width:auto;
+				margin-left:0px;
+				float:none;
+
+				}
+
+
+
+		}
+
+
+		.sep-right, .sep-left{
+		border:none;
+		}
+
+
+
+		.top-pattern{
+			background-repeat:repeat;
+			}
+
+
+		.navbar{
+		.nav >li{
+		.dropdown-menu:after, .dropdown-menu:before {
+		border:none;
+		}
+		}
+		}
+
+
+
+		}
+	}
+}
+
+
+
+@media (max-width:767px) {
+    body {
+        .content {
+			.text-32, .text-24, .text-20{
+				height:auto;
+			}
+            .mob-clr {
+                float: none;
+                display: block;
+                width: auto;
+            }
+			.mob-dc{
+				text-align: center;
+			}
+	    .mob-no-mar{
+		.mar(0, 0, 0, 0);
+	     }
+			.top-pattern{
+			background-repeat:repeat;
+			}
+            .contest-list img {
+				width:100%;
+            }
+			ol.activities-list{
+				background:none;
+					>li{
+						background:none;
+						}
+				}
+            .affix-content, .affix, .admin .admin-content, .banner-bg {
+                position: static;
+            }
+            [class*="span"].pull-left {
+                float: left;
+                margin-left: 10px;
+            }
+            .fixed-nav-container, .fixed-admin-nav-container {
+                padding: 0px;
+            }
+	    input[type="text"],
+			input[type="password"],
+			input[type="datetime"],
+			input[type="datetime-local"],
+			input[type="date"],
+			input[type="month"],
+			input[type="time"],
+			input[type="week"],
+			input[type="number"],
+			input[type="email"],
+			input[type="url"],
+			input[type="search"],
+			input[type="tel"],
+			input[type="color"],
+			.uneditable-input input {
+				height:33px;
+				width:75%;
+				.pad(3px, 6px, 3px, 6px);
+			}
+			select{
+				width:97%;
+			}
+			.hidden-sm{
+				display:none;
+			}
+			.form-horizontal {
+				 label, .group-inline span, .group-block span, .checkbox >span {
+					width: auto;
+					margin-left:7px;					
+				}
+				label{
+					text-align:left;
+				}
+				.input.checkbox, .error-message, .info{
+					.mar(0px, 0px, 0px, 20px); 
+				}
+				.submit{
+					.mar(0px, 0px, 0px, 0px); 
+				}
+				.input.checkbox{
+					label{
+						text-align:left;
+						width:75%;
+						vertical-align: middle;
+					}
+				}
+			}
+			
+			div.captcha-block {
+			    margin: 0;
+			}
+			#adcopy-puzzle-image{
+				width: 100%;
+				 height: auto;
+					img{
+					width: 100%;
+					}
+			}
+			#adcopy-outer{
+				 width: 84%;
+				 margin-left:20px;
+				 #adcopy_response {
+					width: 100% !important;
+				 }
+			}
+			.terms-error{
+				div.input{
+					margin-left: 0;
+				}
+			}
+		#adcopy-outer td {
+			width:42%;
+			text-align:left;
+			span, div{
+				pading-top:20px;
+			}
+		}
+            ol.over-block1 > li .list-content {
+                height: 220px;
+            }
+            [class*="span"].more {
+                width: 35px;
+            }
+            .thumbnail {
+				h4.ver-space+aside {
+					border-top:1px solid #ddd;
+					border-left:none;
+				}
+			}
+            .navbar {
+                .sep, .sep-top, .sep-right, .sep-bot {
+                    border: none;
+                }
+                [class*="span"] {
+                    margin-left: 0;
+                }
+            }
+            .navbar .brand {
+                padding-left: 20px;
+            }
+			.nav-tabs {
+				> li{
+					float:none;
+				}
+			}
+			.over-details{
+				.pull-left{
+					float:left;
+				}
+			}
+			.mob-ps{
+				position:static;
+			}
+			.mob-sep-none{
+				border: none;
+			}
+			.mob-mar {
+				.mar(0, 0, 0, 0);
+				}
+			.project-affix.affix{
+				height:auto;
+				width:auto;
+				border:none;
+				box-shadow: none;
+				.mob-ps{
+					a{
+						.mar(5px, 0, 5px, 0);
+					}
+				}
+			}
+			.navbar .nav > li > .dropdown-menu{
+						&:before, &:after {
+						display:none;
+				}
+			}
+			.or-ver {
+				left: 45%;
+				top: -6px;
+			}
+        }
+    }
+}
+
+@media (max-width: 450px) {
+	body {
+		.content {
+			.paging{
+				 > a, > span, span.current{
+					padding:0 3px;
+					}
+				}
+
+			footer, .footer-push {
+				.container {
+					padding:0;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 240px) and (max-width: 320px) {
+	body {
+		.content {
+			.navbar {
+				.brand{
+					padding-left:9px;
+					}
+				}
+			}
+		}
+	}
+
+
+@media (min-width: 979px) and (max-width: 1024px) {
+	body {
+		.content {
+			.mob-c{
+				li{
+					a{
+						padding:4px;
+					}
+				}
+			}
+			.navbar .nav > li > a {
+				padding: 4px 8px;
+			}
+		}
+	}
+}

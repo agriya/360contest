@@ -1,0 +1,15 @@
+{
+	"name" : "Social Marketing",
+	"description" : " By enabling this, site users can share the site events in social networking site like Facebook, Twitter, LinkedIn etc.,",
+	"author" : "Agriya",
+	"authorEmail" : "info@agriya.com",
+	"authorUrl" : "http://www.agriya.com",
+	"settings" : "true",
+	"parent": "2.Plugins For All Resources.Children.Growth Hacking.Children",
+	"subplugin" : "",
+	"icon" : "social-marketing",
+	"disable" : 1,
+	"delete" : 1,
+	"module_id": "568",
+	"module_hash": "a01fbdd66589ffed2b3445c03879bfea"
+}

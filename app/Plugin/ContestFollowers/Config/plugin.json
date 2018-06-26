@@ -1,0 +1,16 @@
+{
+	"name" : "Contest Followers",
+	"description" : "This allows the user to follow the contest.",
+	"author" : "Agriya",
+	"authorEmail" : "info@agriya.com",
+	"authorUrl" : "http://www.agriya.com",
+	"parent": "2.Plugins For All Resources.Children.Contests.Children",
+	"dependencies": {
+		"plugins" : {
+			"Contests" : "Contests"
+		}
+	},
+	"disable" : 1,
+	"delete" : 1,
+	"icon" : "contest-followers"
+}

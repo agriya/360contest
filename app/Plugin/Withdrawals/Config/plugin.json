@@ -1,0 +1,18 @@
+{
+	"name" : "Withdrawals",
+	"description" : "By enabling this, user can withdraw the amount from site account to his personal (bank, PayPal etc.,) account.",
+	"author" : "Agriya",
+	"authorEmail" : "info@agriya.com",
+	"authorUrl" : "http://www.agriya.com",
+	"settings" : "true",
+	"parent": "2.Plugins For All Resources.Children.Payments.Children.Wallet.Children",
+	"dependencies": {
+		"plugins" : {
+			"Wallet" : "Wallet"
+		}
+	},
+	"icon" : "signout",
+	"is_show_disable_link" : 0,
+	"disable" : 0,
+	"delete" : 0
+}

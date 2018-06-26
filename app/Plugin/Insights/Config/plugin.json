@@ -1,0 +1,14 @@
+{
+	"name" : "Insights",
+	"description" : "By enabling this, site admin and contest owners can see exclusive statistics display over the contests.",
+	"author" : "Agriya",
+	"authorEmail" : "info@agriya.com",
+	"authorUrl" : "http://www.agriya.com",
+	"parent": "2.Plugins For All Resources.Children.Growth Hacking.Children",
+	"subplugin" : "",
+	"icon" : "bar-chart",
+	"disable" : 1,
+	"delete" : 1,
+	"module_id": "610",
+	"module_hash": "c9e5277664a945bc3cd56b88d4f7c932"
+}

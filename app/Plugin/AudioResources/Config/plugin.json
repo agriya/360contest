@@ -1,0 +1,19 @@
+{
+	"name" : "Audio Resources",
+	"description" : "This allows video specific contests.",
+	"author" : "Agriya",
+	"authorEmail" : "info@agriya.com",
+	"authorUrl" : "http://www.agriya.com",
+	"parent": "1.Resources.Children",
+	"settings" : "true",
+	"dependencies": {
+		"plugins" : {
+			"Contests" : "Contests"
+		}
+	},
+	"icon" : "audio-resources",
+	"disable" : 1,
+	"delete" : 1,
+	"module_id": "632",
+	"module_hash": "9d9ddec9fbfa36c58de377c4a1a7ee24"
+}

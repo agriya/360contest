@@ -1,0 +1,60 @@
+//
+// Pagination (multiple pages)
+// --------------------------------------------------
+.paging ul {
+  display: inline-block;
+  .ie7-inline-block();
+  margin-left: 0;
+  margin-bottom: 0;
+  .border-radius(3px);
+  .box-shadow(0 1px 2px rgba(0,0,0,.05));
+}
+.paging li {
+    display: inline;
+  }
+.paging > a, .paging > span, .paging span.current {
+  display:inline-block;
+  padding: 0 10px;
+  float:left;
+  line-height: (@baseLineHeight * 2) - 10;
+  text-decoration: none;
+  background-color: @paginationBackground;
+  border: 1px solid @paginationBorder;
+  border-left-width: 0;
+}
+.paging .active a, .current {
+  color: @grayLight;
+  cursor: default;
+}
+.paging .disabled span,
+.paging .disabled a,
+.paging .disabled a:hover {
+  color: @grayLight;
+  background-color: transparent;
+  cursor: default;
+}
+.paging li:first-child a,
+.paging li:first-child span, .paging span:first-child, .paging a:first-child {
+  border-left-width: 1px;
+  .border-radius(3px 0 0 3px);
+}
+.paging li:last-child a, 
+.paging li:last-child span,
+.paging span:last-child, 
+.paging a:last-child {
+    .border-radius(0 3px 3px 0);
+
+}
+// Centered
+.paging-centered {
+  text-align: center;
+}
+.paging-right {
+  text-align: right;
+}
+.paging span.next, .paging span.prev, .paging .paging-count {
+    display:none;
+}
+.paging span:first-child, .paging span.prev + span {
+    border-left: 1px solid #ddd;
+}

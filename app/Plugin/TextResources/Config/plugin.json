@@ -1,0 +1,19 @@
+{
+	"name" : "Text Resources",
+	"description" : "This allows text specific contests.",
+	"author" : "Agriya",
+	"authorEmail" : "info@agriya.com",
+	"authorUrl" : "http://www.agriya.com",
+	"parent": "1.Resources.Children",
+	"settings" : "false",
+	"dependencies": {
+		"plugins" : {
+			"Contests" : "Contests"
+		}
+	},
+	"icon" : "text-resources",
+	"disable" : 1,
+	"delete" : 1,
+	"module_id": "633",
+	"module_hash": "515f5b62bd13a84b015ddba670e2da16"
+}

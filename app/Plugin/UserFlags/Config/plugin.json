@@ -1,0 +1,11 @@
+{
+	"name" : "Report Abuse for User",
+	"description" : "This allows users to report abuse for any users.",
+	"author" : "Agriya",
+	"authorEmail" : "info@agriya.com",
+	"authorUrl" : "http://www.agriya.com",
+	"parent": "2.Plugins For All Resources.Children.Users.Children",
+	"disable" : 1,
+	"delete" : 1,
+	"icon" : "report-abuse-for-user"
+}

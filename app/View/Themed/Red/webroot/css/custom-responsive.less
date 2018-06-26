@@ -1,0 +1,394 @@
+/*Media query styles*/
+@media (min-width: 979px) and (max-width: 1024px) {
+	body {
+		.content {
+			.mob-c{
+				li{
+					a{
+						.pad(4px, 4px, 4px, 4px);
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 768px) and (max-width: 979px) {
+	body {
+		.content {
+			span.text-32{
+				font-size:24px;
+			}
+			.navbar {
+                .sep, .sep-top, .sep-right, .sep-bot {
+                    border: none;
+                }
+			}
+			div.activity-content {		
+				.mar(0, 0, 0, 145px);
+			}
+			.mob-c{
+				width:auto;
+				float:none;
+				display:block;
+					div{
+						margin-left:0px;
+					}
+			}
+			.top-pattern{
+				background-repeat:repeat;
+				color:@white;
+				.grayc{
+					color:#ccc;
+				}
+			}
+			.navbar{
+				.nav >li{
+					.dropdown-menu:after, .dropdown-menu:before {
+						border:none;
+					}
+				}
+				.navbar-inner{
+					.nav-collapse{
+					  .nav{
+					 	.mar(10px, 0, 0, 0);
+						}
+					}
+				}
+			}
+			.view-image{
+				width:100%;
+			}
+			.space{
+				.pad(5px, 5px, 5px, 5px);
+			}
+			.mob-sep-none{
+				border:none;
+			}
+			.get-start-btn{
+					top:45%;
+				  }
+				  
+			.clone-of{
+			 	img{
+			 	width:100%;
+			 	}
+			 }
+							
+			.banner-content{
+ 				li{
+ 				 background:none;
+				 height:auto;
+				 }
+ 			}
+			.tab-clr{
+			    float: none;
+                display: block;
+                width: auto;
+            }
+			.navbar-inner{
+				.nav-collapse{
+					.pad(0, 0, 10px, 0);
+					[class*="span"], [class^="span"]{
+						.mar(0, auto, 0, auto);
+						float:none;
+                		display: block;
+					}
+				}
+            }
+			.clone-block{
+				left:350px;
+				top:-15px;
+			}
+			.discussion-list{
+				.span13{
+					width:380px;
+				}
+				.span15{
+					width:430px;
+				}
+				.span18{
+					width:535px;
+				}
+				.thumbnail.hor-mspace{
+					.mar(0, 4px, 0, 0);
+				}
+			}
+			.activity-content{
+				top:-27px;
+				.span10{
+					width:280px;
+				}
+			}
+			.activity-details-list{
+				float:left;
+			}
+			.filter-block{
+				li{
+					.hor-space{
+						.pad(0, 6px, 0, 6px);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width:767px) {
+    body {
+        .content {
+			.main{
+				.mar(0, -20px, 0, -20px);
+			}
+			.container{
+				.pad(0, 10px, 0, 10px);
+			}
+			header{
+				.mar(0, -20px, 0, -20px);
+			}
+			.discussion-list .discussion:hover{
+				.mar(0, 0, 0, 0);
+				.pad(7px, 7px, 7px, 7px);
+			}
+			.text-32, .text-24, .text-20{
+				height:auto;
+			}
+            .mob-clr {
+                float: none;
+                display: block;
+                width: auto;
+            }
+			.mob-no-mar{
+				.mar(0, 0, 0, 0);
+			}
+			.top-pattern{
+				background-repeat:repeat;
+				color:@white;
+				.mar(0, 0, 0, 0);
+				.grayc{
+					color:#ccc;
+				}
+			}
+			.contest-list img {
+				width:100%;
+            }
+			ol.activities-list{
+				background:none;
+				>li{
+					background:none;
+				}
+			}
+            .affix-content, .affix, .admin .admin-content, .banner-bg {
+                position: static;
+            }
+			.banner-bg{
+				.pad(10px, 0, 50px, 0);
+			}
+            [class*="span"].pull-left {
+                float: left;
+                .mar(0, 0, 0, 10px);
+            }
+            .fixed-nav-container, .fixed-admin-nav-container {
+                .pad(0, 0, 0, 0);
+            }
+            ol.over-block1 > li .list-content {
+                height: 220px;
+            }
+            [class*="span"].more {
+                width: 35px;
+            }
+            .thumbnail {
+				h4.ver-space+aside {
+					border-top:1px solid #ddd;
+					border-left:none;
+				}
+			}
+            .navbar {
+				.navbar-inner{
+					.nav-collapse{
+						.pad(0, 0, 10px, 0);
+						.nav{
+							.mar(10px, 0, 0, 0);
+						}
+					}
+				}
+                .sep, .sep-top, .sep-right, .sep-left, .sep-bot {
+                    border: none;
+                }
+                [class*="span"] {
+                    margin-left: 0;
+                }
+            }
+            .navbar .brand {
+                .pad(0, 0, 0, 20px);
+            }
+			.nav-tabs {
+				> li{
+					float:none;
+				}
+			}
+			.over-details{
+				.pull-left{
+					float:left;
+				}
+			}
+			.mob-ps{
+				position:static;
+			}
+			.mob-mar {
+				.mar(0, 0, 0, 0);
+			}
+			.get-start-btn{
+				top:100%;
+				left:0;
+			}	
+			.project-affix.affix{
+				height:auto;
+				width:auto;
+				border:none;
+				box-shadow: none;
+				.mob-ps{
+					a{
+						.mar(5px, 0, 5px, 0);
+					}
+				}
+			}
+			.navbar .nav > li > .dropdown-menu{
+				&:before, &:after {
+					display:none;
+				}
+			}
+			.view-image{
+					width:100%;
+			}
+			.contest-user-img-block:hover span.flip-link{
+				display:none;
+			}
+			.tab-content {
+				overflow: inherit;
+			}
+			
+			.banner-content{
+ 				li{
+ 				 background:none;
+				 height:auto;
+				 p{ margin-top:0px; text-align:center;}
+				 }
+ 			}
+			#LanguageForm{
+				[class*="span"], [class^="span"]{
+					.mar(0, auto, 0, auto);
+					float:none;
+					width:110px;
+				}
+			}
+			.clone-block{
+				position:relative;
+				left:0;
+				top:0;
+			}
+			.socail-activity-list, .activity-details-list{
+				.pad(10px, 0, 10px, 0);
+				[class*="span"], [class^="span"]{
+					float:left;
+					width:auto;
+					.mar(10px, 0, 0, 10px);
+				}
+			}
+			.btn{
+				&[class*="span"], &[class^="span"]{
+					width:auto;
+					float:left;
+					.mar(5px, 5px, 5px, 5px);
+				}
+			}
+			.activity-content{
+				position:inherit;
+				.status-left-ps{
+					display:none;
+				}
+			}
+			.htruncate{
+				overflow:visible;
+				white-space:normal;
+				height:auto;
+			}
+		}
+    }
+}
+@media (max-width: 600px) {
+	body {
+		.content {
+			ol.participant-list{
+				.mar(auto, auto, auto, auto);
+				li{
+					float:none;
+					text-align:center;
+					width:auto;
+				}
+			}
+			div.slider-inner-block{
+				height:auto;
+			}
+			.slider-block{
+				position:absolute;
+			}
+			div.overlay-block{
+				background:none;
+			}
+		}
+	}
+}
+
+@media (max-width: 450px) {
+	body {
+		.content {
+			.paging{
+				 > a, > span, span.current{
+					.pad(0, 6px, 0, 6px);
+				}
+			}
+			footer, .footer-push {
+				.container {
+					.pad(0, 0, 0, 0);
+				}
+			}
+			ol.participant-list{
+				.mar(auto, auto, auto, auto);
+			 li{
+					float:none;
+					text-align:center;
+					width:auto;
+			   }
+			}
+			div.slider-inner-block{
+				height:auto;
+			}
+			.slider-block{
+				position:absolute;
+			}
+			div.overlay-block{
+				background:none;
+			}
+		}
+	}
+}
+
+@media (min-width: 230px) and (max-width: 320px) {
+	body {
+		.content {
+			.paging{
+				 > a, > span, span.current{
+					.pad(0, 3px, 0, 3px);
+				}
+			}
+			.navbar {
+				.brand{
+					.pad(0, 0, 0, 9px);
+				}
+			}
+			select{
+				width:170px;
+			}
+		}
+	}
+}

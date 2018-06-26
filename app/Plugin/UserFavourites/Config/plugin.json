@@ -1,0 +1,16 @@
+{
+	"name" : "User Favorites",
+	"description" : "This allows the user to follow the other users",
+	"author" : "Agriya",
+	"authorEmail" : "info@agriya.com",
+	"authorUrl" : "http://www.agriya.com",
+	"parent": "2.Plugins For All Resources.Children.Users.Children",
+	"dependencies": {
+		"plugins" : {
+			"Contests" : "Contests"
+		}
+	},
+	"disable" : 1,
+	"delete" : 1,
+	"icon": "user-followers"
+}

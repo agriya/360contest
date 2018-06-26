@@ -1,0 +1,19 @@
+{
+	"name" : "Image Resources",
+	"description" : "This allows image specific contests.",
+	"author" : "Agriya",
+	"authorEmail" : "info@agriya.com",
+	"authorUrl" : "http://www.agriya.com",
+	"parent": "1.Resources.Children",
+	"settings" : "true",
+	"dependencies": {
+		"plugins" : {
+			"Contests" : "Contests"
+		}
+	},
+	"module_id": "564",
+	"module_hash": "cc19b73e71cba1dc7eafdc69a3006da1",
+	"icon" : "image-resources",
+	"disable" : 1,
+	"delete" : 1
+}

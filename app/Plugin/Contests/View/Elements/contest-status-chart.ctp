@@ -1,0 +1,1 @@
+<?php echo $this->requestAction(array('controller' => 'contests', 'action' => 'contest_chart', 'admin' => false, 'is_admin' => $is_admin), array('return')); ?>

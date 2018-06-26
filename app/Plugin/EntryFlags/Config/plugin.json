@@ -1,0 +1,16 @@
+{
+	"name" : "Report Abuse for Entry",
+	"description" : "This allows users to report abuse for entries.",
+	"author" : "Agriya",
+	"authorEmail" : "info@agriya.com",
+	"authorUrl" : "http://www.agriya.com",
+	"parent": "2.Plugins For All Resources.Children.Contests.Children",
+	"dependencies": {
+		"plugins" : {
+			"Contests" : "Contests"
+		}
+	},
+	"disable" : 1,
+	"delete" : 1,
+	"icon" : "report-abuse-for-entry"
+}

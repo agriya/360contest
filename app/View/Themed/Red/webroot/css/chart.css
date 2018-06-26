@@ -1,0 +1,520 @@
+ul.flow-chart {
+   background:url("../img/filter.png") no-repeat 358px -569px;
+   height: 65px;
+   overflow: hidden;
+   padding: 106px 0 32px 8px;
+   width:940px;
+   z-index:2;
+}
+div.flow-chart,.eliminated-f,.won-f,.withdrawn-f,ul.lost,ul.rejected,ul.wenner-by-selected,ul.paid-participant,ul.changes-request,ul.completed,ul.winner,ul.judging,ul.expired,ul.request-refund,ul.open,ul.pending,ul.flow-chart {
+	position:relative;
+}
+div.flow-chart{
+    height:250px;
+}
+ul.flow-chart li,ul.contest-chart li {
+	float:left;
+}
+ul.flow-chart li a,ul.contest-chart li a, ul.flow-chart li span.static-status {
+	color:#fff;
+	display:block;
+    font-size: 12px;
+	font-weight:normal;
+	height:17px;
+	padding:3px 7px 3px 0;
+	font-weight:bold;
+}
+ul.flow-chart li span.static-status{
+	padding: 3px 16px 3px 11px;
+}
+ul.contest-chart span.active a,ul.flow-chart span.active a ,ul.flow-chart li.active a,ul.contest-chart li.active a {
+	color:#000;
+}
+ul.flow-chart li a:hover,ul.contest-chart li a:hover {
+	text-decoration:underline;
+}
+ul.flow-chart li span,ul.contest-chart li span {
+	height:23px;
+	float:left;
+	display:block;
+	padding:0px 0px 0px 5px;
+}
+ul.flow-chart span.payment-left {
+	background:url(../img/filter.png) no-repeat left -3271px;
+}
+ul.flow-chart span.payment-left a,ul.flow-chart span.payment-left span {
+	background:url(../img/filter.png) no-repeat right -3025px;
+}
+ul.pending {
+	left:157px;
+	top:-23px;
+}
+ul.flow-chart span.pending-approval {
+	background:url(../img/filter.png) no-repeat left -2902px;
+}
+ul.flow-chart span.pending-approval a,ul.flow-chart span.pending-approval span {
+	background:url("../img/filter.png") no-repeat scroll right -3147px;
+}
+span.rejected-1 {
+	background:url(../img/filter.png) no-repeat left -3517px;
+}
+span.rejected-1 a, span.rejected-1 span {
+	background:url(../img/filter.png) no-repeat right -3640px;
+}
+ul.open {
+	left:157px;
+	top:-83px;
+}
+span.open-f {
+    background: url("../img/filter.png") no-repeat left -2533px;
+    margin: 0 0 0 7px;
+}
+span.open-f a,span.open-f span {
+	background:url("../img/filter.png") no-repeat right -2411px;
+}
+ul.wenner-by-selected {
+	left:86px;
+	top:-185px;
+}
+ul.winner {
+	left:101px;
+    top:-44px;
+}
+ul.completed {
+    background: url("../img/filter.png") no-repeat 119px -4489px;
+    height: 22px;
+    left:156px;
+    top: -104px;
+    padding:0px 25px 0px 0px;
+	z-index:3;
+}
+ul.changes-request {
+	background:url("../img/filter.png") no-repeat 53px -487px;
+	height:58px;
+	left:11px;
+	top:-103px;
+	z-index:2;
+}
+li.changes-f {
+    background: url("../img/filter.png") no-repeat 165px -4976px;
+    padding: 0 23px 0 13px;
+}
+span.pending-action-to-admin{
+	background:url("../img/filter.png") no-repeat left -6878px;
+    margin: 0 0 0 28px;
+}
+ul.request-refund li.request-refund-f{
+     height: 43px;
+    left: -17px;
+    position: relative;
+}
+ul.request-refund {
+   height: 81px;
+   width: 200px;
+}
+div.request-refund-block{
+    background:url("../img/filter.png") no-repeat 177px -6411px;
+    left: -113px;
+    position: relative;
+    top: -105px;
+}
+ul.request-refund li{
+    float:none;
+}
+li.refund-l{
+    background:url("../img/filter.png") no-repeat 80px -210px;
+}
+li.request-l{
+    left:-20px;
+    position: relative;
+}
+ul.flow-chart span.request-refund {
+	background:url(../img/filter.png) no-repeat left -3886px;
+}
+ul.flow-chart span.request-refund a, ul.flow-chart span.request-refund span {
+	background:url(../img/filter.png) no-repeat right -3763px;
+}
+ul.flow-chart span.canceled-admin,ul.contest-chart span.canceled-admin {
+	background:url(../img/filter.png) no-repeat left -1795px;
+}
+ul.flow-chart span.canceled-admin a,ul.flow-chart span.canceled-admin span, ul.contest-chart span.canceled-admin a,ul.contest-chart span.canceled-admin span {
+	background:url(../img/filter.png) no-repeat right -934px;
+}
+ul.expired {
+     background: url("../img/filter.png") no-repeat scroll 37px -214px transparent;
+    left: -9px;
+    padding: 40px 0 0;
+    top:-81px;
+}
+span.expired {
+	background:url(../img/filter.png) no-repeat left -2041px;
+}
+span.expired a,span.expired span {
+	background:url(../img/filter.png) no-repeat right -1918px;
+}
+ul.judging {
+    left: 96px;
+    top:-23px;
+}
+ul.judging-request{
+       top:-106px;
+}
+span.judging {
+	background:url(../img/filter.png) no-repeat left -2287px;
+}
+span.judging a,span.judging span.static-status {
+	background:url(../img/filter.png) no-repeat right -2164px;
+}
+*+html ul.winner {
+	z-index:2;
+	top:0px;
+}
+ul.flow-chart span.winner-selected {
+	background:url(../img/filter.png) no-repeat left -4378px;
+}
+ul.flow-chart span.winner-selected a,ul.flow-chart span.winner-selected span {
+	background:url(../img/filter.png) no-repeat right -4132px;
+}
+ul.changes-request1{
+    background: url("../img/filter.png") no-repeat scroll 31px -6052px transparent;
+    height: 40px;
+    left: 49px;
+    top: -63px;
+}
+ul.flow-chart span.changes-request,ul.contest-chart span.changes-request {
+	background:url(../img/filter.png) no-repeat left -1057px;
+}
+ul.flow-chart span.changes-request {
+    min-width: 138px;
+}
+span.rejected-1 {
+    min-width: 82px;
+}
+ul.flow-chart span.changes-request a,ul.flow-chart span.changes-request span,ul.contest-chart span.changes-request a,ul.contest-chart span.changes-request span {
+	background:url(../img/filter.png) no-repeat right -1180px;
+}
+ul.flow-chart span.changes-completed {
+	background:url(../img/filter.png) no-repeat left -1303px;
+}
+ul.flow-chart span.changes-completed a,ul.flow-chart span.changes-completed span {
+	background:url(../img/filter.png) no-repeat right -1426px;
+}
+ul.flow-chart span.withdrawn {
+	background:url(../img/filter.png) no-repeat left -6197px;
+}
+ul.flow-chart span.withdrawn a,ul.flow-chart span.withdrawn span {
+	background:url(../img/filter.png) no-repeat right -6236px;
+}
+ul.flow-chart span.complete,ul.contest-chart span.complete {
+	background:url(../img/filter.png) no-repeat left -1672px;
+}
+ul.flow-chart span.complete a,ul.flow-chart span.complete span,ul.contest-chart span.complete a,ul.contest-chart span.complete span {
+	background:url(../img/filter.png) no-repeat right -1549px;
+}
+ul.flow-chart span.files-expectation,ul.contest-chart span.files-expectation {
+	background:url(../img/filter.png) no-repeat left -3083px;
+}
+ul.flow-chart span.files-expectation a,ul.flow-chart span.files-expectation span,ul.contest-chart span.files-expectation a,ul.contest-chart span.files-expectation span {
+	background:url(../img/filter.png) no-repeat right -2960px;
+}
+ul.paid-participant {
+	left:115px;
+	top:-30px;
+}
+ul.paid-participant1 {
+	left:169px;
+	top:-31px;
+}
+ul.flow-chart span.paid-participant {
+	background:url(../img/filter.png) no-repeat left -2656px;
+}
+ul.flow-chart span.paid-participant a,ul.flow-chart span.paid-participant span {
+	background:url(../img/filter.png) no-repeat right -2779px;
+}
+ul.flow-chart span.winner-by-selected {
+	background:url(../img/filter.png) no-repeat left -4009px;
+}
+ul.flow-chart span.winner-by-selected a,ul.flow-chart span.winner-by-selected span {
+	background:url(../img/filter.png) no-repeat right -4255px;
+}
+*+html ul.wenner-by-selected {
+	top:-63px;
+}
+li.payment-f  {
+    background: url("../img/filter.png") no-repeat 120px -4489px;
+    min-width: 419px;
+}
+li.pending-f {
+    background: url("../img/filter.png") no-repeat 127px -4489px;
+}
+div.open-f {
+	background:url("../img/filter.png") no-repeat 60px -4489px;
+	padding:0px 50px 0px 0px;
+}
+li.judging-f {
+	background:url("../img/filter.png") no-repeat 66px -4489px;
+}
+div.winner-select {
+    background: url(../img/filter.png) no-repeat 120px -4489px;
+    padding: 0 25px 0 0;
+    position: relative;
+    width:150px;
+    z-index: 3;
+}
+*+html div.winner-select{
+	top:-23px;
+}
+ul.rejected {
+    height: 61px;
+    left: -100px;
+    top: -82px;
+}
+
+li.rejected-f{
+     background:url("../img/filter.png") no-repeat 97px -5763px;
+     padding:18px 35px 18px 10px;
+}
+div.judging-r {
+	height:87px;
+	padding:0 60px 0 0;
+	background:url("../img/filter.png") no-repeat 11px -754px;
+}
+div.judging-l {
+	background:url("../img/filter.png") no-repeat 261px -330px;
+}
+li.changes-completed {
+	background:url("../img/filter.png") no-repeat 23px -197px;
+	height: 57px;
+}
+/* contests chart list style is begin */
+ul.contest-chart {
+    background:none;
+    height: 95px;
+    overflow: hidden;
+    padding: 115px 0 0 5px;
+    width:577px;
+}
+.eliminated-f {
+    background:url("../img/filter.png") no-repeat 2px -6574px;
+    height: 80px;
+    left: 50px;
+    padding: 0 0 0 34px;
+    position: relative;
+    top: -102px;
+}
+.won-f {
+    background: url("../img/filter.png") no-repeat 0 -5136px;
+    height: 26px;
+    left: 75px;
+    padding: 3px 0 0 147px;
+    top: -143px;
+    z-index: 1000;
+}
+ul.lost {
+    background: url("../img/filter.png") no-repeat scroll 53px -5456px;
+    height: 40px;
+    left: 10px;
+    padding: 0 0 0 75px;
+    top: -141px;
+}
+
+.withdrawn-f {
+    background: url("../img/filter.png") no-repeat 1px -6752px;
+    height: 24px;
+    left: 60px;
+    padding: 16px 0 0 32px;
+    top: -305px;
+    width: 200px;
+    z-index: 10000;
+}
+div.flow-chart-block {
+	text-align: center;
+}
+div.entry-block, div.development-block{
+    border: 1px dashed #C4C4C4;
+    height: 210px;
+    position: absolute;
+    top: 10px;
+}
+div.flow-chart div.entry-block {
+    left: 0;
+    width: 397px;
+}
+div.flow-chart div.development-block {
+    left: 406px;
+    width: 550px;
+    z-index: 1;
+}
+span.entry-f,span.development-f{
+   background:#FFFFFF;
+    bottom: -9px;
+    left:220px;
+    position: absolute;
+    height:23px;
+    display:block;
+    padding:0px 0px 0px 4px;
+    color:#fff;
+}
+span.entry-f a,span.entry-f span,span.development-f a,span.development-f span{
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    height:20px;
+    padding: 2px 10px;
+    font-size: 12px;
+}
+span.entry-f a:hover,span.development-f a:hover{
+    text-decoration:underline;
+}
+span.entry-f{
+    left:160px;
+    background:url("../img/filter.png") no-repeat  left -978px;
+}
+span.entry-f a,span.entry-f span{
+    background:url("../img/filter.png") no-repeat right -1014px;
+}
+span.development-f{
+    background:url("../img/filter.png") no-repeat left -1218px;
+}
+span.development-f a,span.development-f span{
+    background:url("../img/filter.png") no-repeat right -1254px;
+}
+div.flow-chart-block {
+    position:absolute;
+    right:-12px;
+    text-align:center;
+    top:9px;
+}
+div.all-block{
+    bottom: 39px;
+    position: absolute;
+    right:42px;
+    z-index: 100;
+}
+div.entry-flow-chart-block div.all-block{
+    bottom: 29px;
+    right: 2px;
+}
+span.all-f,span.flagged-f{
+   display:block;
+   height:23px;
+   padding:0px 0px 0px 4px;
+   background:url("../img/filter.png") no-repeat left -2818px;
+   margin:0px 0px 5px 0px;
+}
+span.all-f a,span.flagged-f a{
+    background: url("../img/filter.png") no-repeat right -2855px;
+    display: block;
+    font-size: 11px;
+    height: 20px;
+    padding: 2px 10px;
+}
+ul.winner1{
+    left: -47px;
+    top: 0;
+}
+ul.completed1  {
+    background: url("../img/filter.png") no-repeat 120px -4471px;
+    left: 125px;
+    padding: 19px 30px 0 0;
+    top: -81px;
+}
+div.complete-f{
+    background:url("../img/filter.png") no-repeat  23px -6298px;
+    padding: 0 60px 0 0;
+}
+span.won-flow{
+     background:url("../img/filter.png") no-repeat left -3556px;
+}
+span.won-flow a,span.won-flow span{
+     background:url("../img/filter.png") no-repeat right -3595px;
+}
+span.closed-f{
+     background:url("../img/filter.png") no-repeat 1px -3437px;
+}
+span.closed-f a,span.closed-f span{
+     background:url("../img/filter.png") no-repeat right -3474px;
+}
+li.changes-completed1 {
+    background:url("../img/filter.png") no-repeat 16px -214px;
+    height: 40px;
+}
+div.contest-flow-chart div.entry-block {
+    width: 212px;
+}
+div.contest-flow-chart div.development-block {
+    left: 219px;
+    width:360px;
+    z-index: 1;
+}
+div.contest-flow-chart span.entry-f{
+    left:75px;
+}
+div.contest-flow-chart span.development-f{
+    left:96px;
+}
+div.admin-content-block div.contest-flow-chart{
+    width:530px;
+    margin:0px auto;
+}
+div.flow-chart-block1{
+	right: -30px;
+    top: 4px;
+}
+div.contest-flow-chart{
+    width:550px;
+}
+span.chart-info{
+    height: 20px;
+    margin: -8px 0 0 -16px;
+    width: 14px;
+	position:relative;
+	z-index:2;
+}
+noindex:-o-prefocus, .withdrawn-f {
+  top:-225px;
+}
+div.judging-block{
+	position:relative;
+	z-index:1000;
+	width:100px;
+}
+div.pending-action-to-admin-block{
+    height: 90px;
+	background: url("../img/filter.png") no-repeat 56px -7011px;
+    left: 0;
+    position: absolute;
+    top: -87px;
+    width: 316px;
+    z-index: 1;
+}
+span.pending-action-to-admin a,span.pending-action-to-admin span{
+	background:url("../img/filter.png") no-repeat right -6917px;
+}
+ div.completed-block{
+	background: url("../img/filter.png") no-repeat 45px -209px;
+	left:155px;
+	top:-23px;
+	height:53px;
+	position:relative;
+	float:left;
+}
+ul.completed1 div.completed-block{
+	right: 76px;
+    top: -23px;
+}
+.admin div.flow-chart-block {
+		right: -5px;
+}
+ ul.paid-participant {
+    left: 0\9;
+    top: 23px\9;
+}
+
+ul.wenner-by-selected {
+    top: -165px\9;
+}
+ul.paid-participant1 {
+    left: 60px\9;
+    top: 21px\9;
+}

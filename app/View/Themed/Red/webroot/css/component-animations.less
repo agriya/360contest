@@ -1,0 +1,29 @@
+//
+// Component animations
+// --------------------------------------------------
+
+
+.fade {
+  opacity: 0;
+  .transition(opacity .15s linear);
+  &.in {
+    opacity: 1;
+  }
+}
+
+.collapse {
+  position: relative;
+  height:0px;  
+  overflow: hidden;
+  border:0;
+  margin:0;  
+  display:none \9;
+  .transition(height .35s ease);
+  &.in {
+    height: auto;
+	display:block \9;
+  }
+}
+
+
+

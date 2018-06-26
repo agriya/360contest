@@ -1,0 +1,19 @@
+{
+	"name" : "Video Resources",
+	"description" : "This allows video specific contests.",
+	"author" : "Agriya",
+	"authorEmail" : "info@agriya.com",
+	"authorUrl" : "http://www.agriya.com",
+	"parent": "1.Resources.Children",
+	"settings" : "true",
+	"dependencies": {
+		"plugins" : {
+			"Contests" : "Contests"
+		}
+	},
+	"icon" : "video-resources",
+	"disable" : 1,
+	"delete" : 1,
+	"module_id": "609",
+	"module_hash": "d553291cf9db577c806b6c17a0a93939"
+}
