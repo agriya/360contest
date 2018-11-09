@@ -4,7 +4,7 @@
 
 > This is project is part of Agriya Open Source efforts. 360Constest was originally a paid script and was selling around 11000 Euros. It is now released under dual license (OSL 3.0 & Commercial) for open source community benefits.
 
-![trainr_banner](https://user-images.githubusercontent.com/4700341/47853825-02074100-de06-11e8-9c92-7a3d38c7b9cf.png)
+![360contest_banner](https://user-images.githubusercontent.com/4700341/48260530-bf66e980-e441-11e8-8677-9fcffe24bd53.png)
 
 ## Support
 
