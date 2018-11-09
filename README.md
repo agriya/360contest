@@ -1,158 +1,75 @@
-Installation Steps
-------------------
-### Server Requirements
+# 360Constest
 
-    ** PHP Version - 5.2.7+ (preferably 5.5)
-        * Extensions
-            GD Version - 2.x+
-            PCRE Version - 7.x+
-            cURL version - 7.x+
-            json version - 1.x+
-            PDO
-            Freetype
-            mbstring
-        * php.ini settings
-            max_execution_time - 180 (not mandatory)
-            max_input_time - 6000 (not mandatory)
-            memory_limit - 128M (at least 32M)
-            safe_mode - off
-            open_basedir - No Value
-            display_error = On
-            magic_quotes_gpc = Off
-    ** MySQL Version - 5.x
-    ** Apache - 1+ (preferably 2+)
-        Modules
-            mod_rewrite
-            mod_deflate (not mandatory, but highly recommended for better performance–gzip)
-            mod_expires (not mandatory, but highly recommended for better performance–browser caching)
-    Recommended Linux distributions: Centos / Ubuntu / RedHat
+360Constest is an open source online platform for run contests that is capable to run sites similar to 99design,designcrowd,zenlayout,logobids,etc. It is written in CakePHP with MySQL.
 
-### Initial Configurations
+> This is project is part of Agriya Open Source efforts. 360Constest was originally a paid script and was selling around 11000 Euros. It is now released under dual license (OSL 3.0 & Commercial) for open source community benefits.
 
-* Extract Files
-	
-		Unzip the zip file
+![trainr_banner](https://user-images.githubusercontent.com/4700341/47853825-02074100-de06-11e8-9c92-7a3d38c7b9cf.png)
 
-Upload the unzipped files in server.
+## Support
 
-* Need write permission for following folders
+360Constest is an open source online platform for run contests project. Full commercial support (commercial license, customization, training, etc) are available through [360Contest platform support](https://www.agriya.com/products/contest-software)
 
-Note: The above folders need to be writable (Have to chmod to 655 or 755 or 775 depending upon the server configuration. Note: 777 is highly discouraged).
+Theming partner [CSSilize for design and HTML conversions](http://cssilize.com/)
 
-    Make sure the permission as read,write and executable as recursively for the below directories
+## Features
 
-    app/Config
-    app/media
-    app/tmp
-    app/webroot
-    app/webroot/js
-    app/webroot/img
-    app/webroot/css
-    app/Console/Command/cron.sh
-    app/Console/Command/CronShell.php
-    core/lib/Cake/Console/cake
-    core/vendors/securimage
+### Image Contests
 
-### Updating site logo
+Image contests for image resources. Participants can send their image by uploading it 360contest.
 
-There are few places where site logo is located. To change the logo, you need to replace your logo with the exact name and resolution in the following mentioned directories.
+### Video Contests
 
-* Site Logo
+Contest holder can post the contests for video resources. Participants can send their videos by uploading that to Vimeo or Youtube through 360contest. Uploading can be direct upload or normal upload.
 
-   		For Yellow Theme: app/webroot/img/logo.png                     - 285 x 57
-		For Blue Theme: app/View/Themed/Bluish/webroot/img/logo.png    - 285 x 57
+### Contest listing fee
 
-* Favicon
+Collected from contest holder when listing the contests for day wise.
 
-		For Yellow Theme: app/webroot/favicon.ico                      - 16 x 16
-		For Blue Theme: app/View/Themed/Bluish/webroot/favicon.ico     - 16 x 16
+### Escrow
 
-### Configure Apache
+Site can act as escrow and when agreed, participant will be paid after taking site commission; when canceled, the prize amount will be refunded back to contest holder
 
-* If you can reset 'DocumentRoot'
+### Widget
 
-Reset your Apache DocumentRoot to /public_html/app/webroot/ by following means:
+Set up the site for earn some revenue from adding widget in the site footer. Settings are manage in admin panel.
 
-    If you're on dedicated hosting, reset DocumentRoot in httpd.conf with /public_html/app/webroot/
-    If you're on shared hosting, reset your virtual directory to point to /public_html/app/webroot/
+### Affiliate
 
-Note: This requirement is not mandatory, but highly preferred to skip the following tweaks in htaccess files.
+User can associate/refer our site to a different network thereby referred user can earn commission.
 
-* If you cannot reset 'DocumentRoot'
+## Getting Started
 
-Installing site directly in the root e.g., http://yourdomain.com/
+### Prerequisites
 
-Again, no need to tweak 'htaccess' files.
+#### For deployment
 
-Installing site as a sub-folder e.g., http://yourdomain.com/myfolder
+* MySQL
+* PHP >= 5.5.9 with OpenSSL, PDO, Mbstring and cURL extensions
+* Nginx (preferred) or Apache
 
-    app/.htaccess ensure the RewriteBase as below:
+### Setup
 
-RewriteBase    /myfolder/app/
+* Needs writable permission for `/tmp/` , `/media/` and `/webroot/` folders found within project path
+* Database schema 'app/Config/Schema/sql/360contest_with_empty_data.sql'
+* Cron with below:
+```bash
+# Common
+*/2 * * * * /{$absolute_project_path}/app/Console/Command/cron.sh 1 >> /{$absolute_project_path}/app/tmp/error.log 2 >> /{$absolute_project_path}/app/tmp/error.log
+```
 
-    app/webroot/.htaccess ensure the RewriteBase as below:
+### Contributing
 
-RewriteBase	/myfolder/
+Our approach is similar to Magento. If anything is not clear, please [contact us](https://www.agriya.com/contact).
+
+All Submissions you make to 360contest through GitHub are subject to the following terms and conditions:
+
+* You grant Agriya a perpetual, worldwide, non-exclusive, no charge, royalty free, irrevocable license under your applicable copyrights and patents to reproduce, prepare derivative works of, display, publicly perform, sublicense and distribute any feedback, ideas, code, or other information ("Submission") you submit through GitHub.
+* Your Submission is an original work of authorship and you are the owner or are legally entitled to grant the license stated above.
 
 
-### Setting up cron
+### License
 
-* Setup the cron with any one of the following command,
+Copyright (c) 2014-2018 [Agriya](https://www.agriya.com/).
 
-		*/2 * * * * /home/public_html/app/Console/Command/cron.sh 1>> /home/public_html/app/tmp/error.log 2>> /home/public_html/app/tmp/error.log
-
-Also you need to edit '/home/public_html/app/Console/Command/cron.sh' file to change the folder path of each command. Note: Please replace ”/home/public_html/” with your folder path.
-
-(or)
-
-php4 is enabled for shell command in some server, above command will not work. In that case, you can use anyone of the following commands,
-
-* Command 1:
-
-Check php installed path in server using ssh command. which php or which php5. It will give output like /usr/bin/php5.
-
-		vi /home/public_html/core/lib/Cake/Console/cake
- 
-		exec php -q ${LIB}cake.php -working "${APP}" "$@"
-
- In the above file, change the php path with your server php5 installed path,
-
-		exec /usr/bin/php5 -q ${LIB}cake.php -working "${APP}" "$@"
-
-(or)
-
-* Command 2:
-
-		*/2 * * * * wget http://yourdomain.com/cron/main
-		0 0 * * * wget http://yourdomain.com/cron/daily
-
-(or)
-
-* Command 3:
-
-		*/2 * * * * lynx http://yourdomain.com/cron/main
-		0 0 * * * lynx http://yourdomain.com/cron/daily
-
-(or)
-
-* Command 4:
-
-		*/2 * * * * curl http://yourdomain.com/cron/main
-		0 0 * * * curl http://yourdomain.com/cron/daily
-
-### Install your site
-
-Now run the site http://yourdomain.com/ or http://yourdomain.com/myfolder and install your site easily. Please follow the steps, BookorRent Installer.
-
-### Verify Your Configuration
-
-* Running site for the first time
-
-Now run the site with http://yourdomain.com/ or http://yourdomain.com/myfolder
-After successful running of the site, login as admin using the below details in the login form.
-
-      username: admin
-      password: agriya
-
-To change administrator profile details, click 'My Account' in the top menu, then edit the profile information.
-To change administrator password, click 'Change Password' in the top menu, then change the password.
+Dual License (OSL 3.0 & [Commercial License](https://www.agriya.com/contact))
