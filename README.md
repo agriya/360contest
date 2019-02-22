@@ -1,6 +1,7 @@
 # 360Constest
 
-360Constest is an open source online platform for run contests that is capable to run sites similar to 99design,designcrowd,zenlayout,logobids,etc. It is written in CakePHP with MySQL.
+360Constest is an open source online platform that is capable to run contest marketplace sites aka 99designs clones designcrowd, zenlayout, logobids, etc. Supports image (logo, webdesign, etc), video (creative, ads, etc), audio (voice-over, music, etc), text (content writing, blog, etc) contests 
+
 
 > This is project is part of Agriya Open Source efforts. 360Constest was originally a paid script and was selling around 11000 Euros. It is now released under dual license (OSL 3.0 & Commercial) for open source community benefits.
 
@@ -70,6 +71,6 @@ All Submissions you make to 360contest through GitHub are subject to the followi
 
 ### License
 
-Copyright (c) 2014-2018 [Agriya](https://www.agriya.com/).
+Copyright (c) 2014-2019 [Agriya](https://www.agriya.com/).
 
 Dual License (OSL 3.0 & [Commercial License](https://www.agriya.com/contact))
