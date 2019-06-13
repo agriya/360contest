@@ -107,7 +107,7 @@ class Transaction extends AppModel
                 $class = $model_class[1];
             }
             App::import($class, 'Model');
-            $obj = &new $class();
+            $obj = new $class();
             $data = $obj->find('first', array(
                 'conditions' => array(
                     $class . '.id' => $foreign_id
