@@ -36,7 +36,7 @@ class ExtensionsLocalesController extends ExtensionsAppController
     public function admin_index()
     {
         $this->set('title_for_layout', __l('Locales'));
-        $folder = &new Folder;
+        $folder = new Folder;
         $folder->path = APP . 'Locale';
         $content = $folder->read();
         $locales = $content['0'];
@@ -160,7 +160,7 @@ class ExtensionsLocalesController extends ExtensionsAppController
                 'action' => 'index'
             ));
         }
-        $file = &new File(APP . 'Locale' . DS . $locale . DS . 'LC_MESSAGES' . DS . 'default.po', true);
+        $file = new File(APP . 'Locale' . DS . $locale . DS . 'LC_MESSAGES' . DS . 'default.po', true);
         $content = $file->read();
         if (!empty($this->request->data)) {
             // save
@@ -180,7 +180,7 @@ class ExtensionsLocalesController extends ExtensionsAppController
         if (is_null($locale)) {
             throw new NotFoundException(__l('Invalid request'));
         }
-        $folder = &new Folder;
+        $folder = new Folder;
         if ($folder->delete(APP . 'Locale' . DS . $locale)) {
             $this->Session->setFlash(__l('Locale deleted successfully.') , 'default', array(
                 'class' => 'success'
